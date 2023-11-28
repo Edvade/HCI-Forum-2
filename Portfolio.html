@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquerycss.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Frame">
+        <div class="MainB">
+            <ul class="main">
+                <li><a href="Portfolio.html">Home</a></li>
+                <li class="Slidedown"><a href="#">Info about Me!</a>
+                    <ul>
+                        <li><a href="#">Height = 168cm</a></li>
+                        <li><a href="#">Blood Type = A</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="Slidedown"><a href="#">About Me</a>
+                    <ul>
+                        <li><a href="#">Age - 18</a></li>
+                        <li><a href="#">Status - Single</a></li>
+                        <li><a href="#">Family of 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <img src="insta pfp.jpg" style=" width: 25%; height: 25%;">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".main li").hover(function() { 
+                $(this).find("ul").slideToggle("slow"); 
+             });
+        });
+    </script>
+</body>
+</html>
